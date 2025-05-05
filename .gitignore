@@ -1,0 +1,15 @@
+
+*.log
+.DS_Store
+
+/node_modules/
+/vendor/
+
+/build/
+/dist/
+
+.env
+*.secret
+
+.idea/
+.vscode/

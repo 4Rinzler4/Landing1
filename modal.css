@@ -1,0 +1,94 @@
+@import url(styles.css);
+.modal1, .modal2, .modal3, [popover]  {
+    display: none;
+    position: fixed;
+    background: linear-gradient(
+    320deg,
+    #000000,
+    #000000,
+    rgb(0, 0, 70),
+    rgb(0, 0, 140)
+  );
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: slideTop 0.3s ease-in-out;
+}
+
+[popover]:popover-open {
+    display: block;
+}
+
+.modal-content {
+    background-color: var(--white);
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    a {
+        text-decoration: none;
+    };
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.link-project {
+    margin-top: 20px;
+}
+
+.modal1, .modal2, .modal3 .modal-content h2 {
+    color: var(--accent-blue);
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modal-close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background: none;
+    color: white;
+    border: none;
+    i {
+        font-size: 20px;
+    }
+}
+
+.modal-close:hover {
+    cursor: pointer;
+    border: 1px solid var(--accent-blue);
+    border-radius: 50%;
+    color: var(--accent-blue);
+}
+
+.language-switcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    button {
+        background: none;
+        border: none;
+        color: var(--accent-blue);
+        font-size: 18px;
+        cursor: pointer;
+    }
+    button:hover {
+        color: var(--white);
+        background-color: var(--accent-blue);
+        border-radius: 5px;
+        padding: 5px 8px;
+    }
+}
+
