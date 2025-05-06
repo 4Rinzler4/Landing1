@@ -89,12 +89,10 @@ body {
   align-items: center;
   justify-content: center;
   gap: 32px;
-  background: none;
   a {
     color: white;
     text-decoration: none;
     gap: 16px;
-
     width: 100%;
     transition: color 0.3s;
   }
@@ -508,14 +506,6 @@ footer a:hover {
     grid-template-columns: 1fr;
     align-items: center;
   }
-}
-
-/* Навигация */
-nav {
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav a {

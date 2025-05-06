@@ -35,6 +35,34 @@ const typed = new Typed(".text", {
   loop: true,
 });
 
+// document.getElementById('contactForm').addEventListener('submit', async function(event) {
+//   event.preventDefault(); // Запобігаємо стандартній відправці форми
+
+//   const form = event.target;
+//   const formData = new FormData(form);
+//   const errorMessage = document.getElementById('errorMessage');
+
+//   try {
+//       // Приклад відправки даних на сервер (замініть URL на ваш API)
+//       const response = await fetch('http://localhost:3000/submit', {
+//           method: 'POST',
+//           body: formData
+//       });
+
+//       if (response.ok) {
+//           // Успішна відправка — перенаправляємо на сторінку подяки
+//          window.location.href = '.html';
+//       } else {
+//           // Помилка від сервера
+//           throw new Error('Помилка відправки форми. Спробуйте ще раз.');
+//       }
+//   } catch (error) {
+//       // Показуємо повідомлення про помилку
+//       errorMessage.style.display = 'block';
+//       errorMessage.textContent = error.message;
+//   }
+// });
+
 document
   .getElementById("contact-form")
   .addEventListener("submit", async (e) => {
@@ -53,6 +81,9 @@ document
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
+      if (response.ok) {
+        window.location.href = 'thank-you.html';
+      } 
       const result = await response.json();
       responseDiv.style.color = "green";
       responseDiv.textContent =
@@ -364,45 +395,6 @@ function setLanguage(lang) {
   );
   const contactFormSubmit = document.querySelector("#contact-form .submit");
   const contactInfoTitle = document.querySelector(".contact-info h3");
-  const contactInfoAddressLabel = document.querySelector(
-    ".contact-info .info-item:nth-child(1) .font-medium"
-  );
-  const contactInfoAddress = document.querySelector(
-    ".contact-info .info-item:nth-child(1) p:nth-child(2)"
-  );
-  const contactInfoPhoneLabel = document.querySelector(
-    ".contact-info .info-item:nth-child(2) .font-medium"
-  );
-  const contactInfoPhone1 = document.querySelector(
-    ".contact-info .info-item:nth-child(2) p:nth-child(2)"
-  );
-  const contactInfoPhone2 = document.querySelector(
-    ".contact-info .info-item:nth-child(2) p:nth-child(3)"
-  );
-  const contactInfoEmailLabel = document.querySelector(
-    ".contact-info .info-item:nth-child(3) .font-medium"
-  );
-  const contactInfoEmail1 = document.querySelector(
-    ".contact-info .info-item:nth-child(3) p:nth-child(2)"
-  );
-  const contactInfoEmail2 = document.querySelector(
-    ".contact-info .info-item:nth-child(3) p:nth-child(3)"
-  );
-  const contactInfoHoursLabel = document.querySelector(
-    ".contact-info .info-item:nth-child(4) .font-medium"
-  );
-  const contactInfoHours1 = document.querySelector(
-    ".contact-info .info-item:nth-child(4) p:nth-child(2)"
-  );
-  const contactInfoHours2 = document.querySelector(
-    ".contact-info .info-item:nth-child(4) p:nth-child(3)"
-  );
-  const contactInfoTelegramLabel = document.querySelector(
-    ".contact-info .info-item:nth-child(5) .font-medium"
-  );
-  const contactInfoTelegram = document.querySelector(
-    ".contact-info .info-item:nth-child(5) p:nth-child(2)"
-  );
   if (contactTitle) contactTitle.textContent = translations[lang].contactTitle;
   if (contactFormHeading)
     contactFormHeading.textContent = translations[lang].contactFormHeading;
@@ -418,37 +410,7 @@ function setLanguage(lang) {
     contactFormSubmit.textContent = translations[lang].contactFormSubmit;
   if (contactInfoTitle)
     contactInfoTitle.textContent = translations[lang].contactInfoTitle;
-  if (contactInfoAddressLabel)
-    contactInfoAddressLabel.textContent =
-      translations[lang].contactInfoAddressLabel;
-  if (contactInfoAddress)
-    contactInfoAddress.textContent = translations[lang].contactInfoAddress;
-  if (contactInfoPhoneLabel)
-    contactInfoPhoneLabel.textContent =
-      translations[lang].contactInfoPhoneLabel;
-  if (contactInfoPhone1)
-    contactInfoPhone1.textContent = translations[lang].contactInfoPhone1;
-  if (contactInfoPhone2)
-    contactInfoPhone2.textContent = translations[lang].contactInfoPhone2;
-  if (contactInfoEmailLabel)
-    contactInfoEmailLabel.textContent =
-      translations[lang].contactInfoEmailLabel;
-  if (contactInfoEmail1)
-    contactInfoEmail1.textContent = translations[lang].contactInfoEmail1;
-  if (contactInfoEmail2)
-    contactInfoEmail2.textContent = translations[lang].contactInfoEmail2;
-  if (contactInfoHoursLabel)
-    contactInfoHoursLabel.textContent =
-      translations[lang].contactInfoHoursLabel;
-  if (contactInfoHours1)
-    contactInfoHours1.textContent = translations[lang].contactInfoHours1;
-  if (contactInfoHours2)
-    contactInfoHours2.textContent = translations[lang].contactInfoHours2;
-  if (contactInfoTelegramLabel)
-    contactInfoTelegramLabel.textContent =
-      translations[lang].contactInfoTelegramLabel;
-  if (contactInfoTelegram)
-    contactInfoTelegram.textContent = translations[lang].contactInfoTelegram;
+
 
   // Footer
   const footerText = document.querySelector("footer p");
@@ -488,3 +450,4 @@ document.addEventListener("DOMContentLoaded", () => {
   // Встановлення мови за замовчуванням
   setLanguage(localStorage.getItem("lang") || "en");
 });
+
