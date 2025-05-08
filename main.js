@@ -172,6 +172,9 @@ const translations = {
     contactInfoTelegramLabel: "Our Telegram Bot",
     contactInfoTelegram: "@Nickname bot - Works 24/7",
     footerText: "© 2025 CodeCraft. All rights reserved",
+    sumbitTitle: "Thank you for your message!",
+    sumbitText: "We will get back to you as soon as possible.",
+    sumbitButton: "Back to Home",
   },
   ua: {
     navAbout: "Про нас",
@@ -231,6 +234,9 @@ const translations = {
     contactInfoTelegramLabel: "Наш Telegram-бот",
     contactInfoTelegram: "@Nickname bot - Працює 24/7",
     footerText: "© 2025 CodeCraft. Усі права захищено",
+    sumbitTitle: "Дякуємо за ваше повідомлення!",
+    sumbitText: "Ми зв’яжемося з вами найближчим часом.",
+    sumbitButton: "Повернутися на головну",
   },
 };
 
@@ -415,6 +421,15 @@ function setLanguage(lang) {
   // Footer
   const footerText = document.querySelector("footer p");
   if (footerText) footerText.textContent = translations[lang].footerText;
+
+  const sumbitTitle = document.getElementById("sumbit-title");
+  const sumbitText = document.getElementById("sumbit-text");
+  const sumbitButton = document.getElementById("sumbit-button");
+  if (sumbitTitle) sumbitTitle.textContent = translations[lang].sumbitTitle;
+  if (sumbitText) sumbitText.textContent = translations[lang].sumbitText;
+  if (sumbitButton)
+    sumbitButton.textContent = translations[lang].sumbitButton;
+  if (sumbitButton) sumbitButton.href = "index.html";
 }
 
 // Обробники подій для кнопок мови

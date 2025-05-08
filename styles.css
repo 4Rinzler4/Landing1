@@ -88,18 +88,32 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  width: 27rem;
+  gap: 20px;
+  overflow: hidden;
   a {
     color: white;
     text-decoration: none;
     gap: 16px;
     width: 100%;
-    transition: color 0.3s;
+    transition: 0.3s ease-in-out;
+    animation: slideTop 0.5s ease-in-out;
+    animation-delay: calc(0.2s * var(--i));
+    
   }
 }
 
 .nav-links a:hover {
   color: var(--accent-purple);
+}
+
+.language-switcher{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* Header */
@@ -678,10 +692,12 @@ nav a:hover::after {
 
 @keyframes slideTop {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(100px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -809,20 +825,6 @@ nav a:hover::after {
   width: 50px;
   height: 50px;
   animation-delay: -1800ms;
-}
-
-@keyframes floating {
-  0% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
 }
 
 .form-card {
@@ -1009,7 +1011,7 @@ footer a:hover::after {
     display: none;
     margin-top: 50px;
     text-align: center;
-    height: 300px;
+    height: 250px;
     flex-direction: column;
     width: 200px;
     backdrop-filter: blur(50px);
