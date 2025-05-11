@@ -51,7 +51,7 @@ const typed = new Typed(".text", {
 
 //       if (response.ok) {
 //           // Успішна відправка — перенаправляємо на сторінку подяки
-//          window.location.href = '.html';
+//          window.location.href = 'submit.html';
 //       } else {
 //           // Помилка від сервера
 //           throw new Error('Помилка відправки форми. Спробуйте ще раз.');
@@ -132,24 +132,21 @@ const translations = {
     project1Title: "Corporate Website",
     project1Desc: "Modern design with responsive layout",
     project1ModalTitle: "Corporate Website",
+    projectModalLink: "Project Link: <a>View Project</a>",
     project1ModalDesc:
-      "Project Description: This corporate website was developed with all modern design and functionality requirements in mind. It features a responsive layout, ensuring proper display on all devices, including mobile phones and tablets.",
-    project1ModalTech: "Technologies: HTML, CSS, JavaScript, PHP, MySQL",
-    project1ModalLink: "View Project",
+      "This corporate website was developed with all modern design and functionality requirements in mind. It features a responsive layout, ensuring proper display on all devices, including mobile phones and tablets.",
+    project1ModalTech: "Technologies: HTML, CSS, JavaScript, MongoDB, Node.js",
     project2Title: "E-Commerce Platform",
     project2Desc: "Fully functional online store",
     project2ModalTitle: "E-Commerce Platform",
     project2ModalDesc:
-      "Project Description: This platform was developed with all modern design and functionality requirements in mind. It features a responsive layout, ensuring proper display on all devices, including mobile phones and tablets.",
-    project2ModalTech: "Technologies: HTML, CSS, JavaScript, PHP, MySQL",
-    project2ModalLink: "View Project",
+      "This platform was developed with all modern design and functionality requirements in mind. It features a responsive layout, ensuring proper display on all devices, including mobile phones and tablets.",
     project3Title: "HR Platform",
     project3Desc: "Innovative solution for HR management",
     project3ModalTitle: "HR Platform",
     project3ModalDesc:
-      "Project Description: This HR platform was developed to streamline personnel management processes. It includes a modern design and responsive layout, ensuring ease of use on any device.",
-    project3ModalTech: "Technologies: HTML, CSS, JavaScript, PHP, MySQL",
-    project3ModalLink: "View Project",
+      "This HR platform was developed to streamline personnel management processes. It includes a modern design and responsive layout, ensuring ease of use on any device.",
+    cardFooterButtons: "Learn More",
     contactTitle: "Contact Us",
     contactFormHeading: "Message",
     contactFormName: "Name",
@@ -161,8 +158,6 @@ const translations = {
     contactInfoAddressLabel: "Address",
     contactInfoAddress: "10 Technological St, Kyiv",
     contactInfoPhoneLabel: "Phone",
-    contactInfoPhone1: "+38 (044) 123-45-67",
-    contactInfoPhone2: "+38 (067) 890-12-34",
     contactInfoEmailLabel: "Email",
     contactInfoEmail1: "info@codecraft.com",
     contactInfoEmail2: "support@codecraft.com",
@@ -172,9 +167,6 @@ const translations = {
     contactInfoTelegramLabel: "Our Telegram Bot",
     contactInfoTelegram: "@Nickname bot - Works 24/7",
     footerText: "© 2025 CodeCraft. All rights reserved",
-    sumbitTitle: "Thank you for your message!",
-    sumbitText: "We will get back to you as soon as possible.",
-    sumbitButton: "Back to Home",
   },
   ua: {
     navAbout: "Про нас",
@@ -182,8 +174,7 @@ const translations = {
     navContact: "Контакти",
     headerTitle: "Інноваційні веб-рішення | Перетворюємо ідеї в реальність",
     aboutTitle: "Про CodeCraft",
-    aboutText:
-      "<strong>CodeCraft</strong> – це інноваційна технологічна компанія, яка втілює найсміливіші ідеї в реальність, створюючи високоякісні та ефективні рішення для бізнесу й індивідуальних клієнтів. Ми спеціалізуємося на розробці сучасних веб-додатків, створенні унікальних дизайнерських концепцій, а також вирішенні складних бізнес-завдань за допомогою креативних і технологічно передових підходів. Якщо ви шукаєте надійного партнера, який допоможе реалізувати ваш проєкт від концепції до запуску, CodeCraft – це ваш ідеальний вибір. Наша команда складається з висококваліфікованих професіоналів, які мають багаторічний досвід у сфері інформаційних технологій, дизайну та управління проєктами. Ми пишаємося тим, що кожен наш спеціаліст привносить у роботу не лише технічні знання, але й пристрасть до інновацій та прагнення досягати найкращих результатів. Ми готові супроводжувати вас на кожному етапі розробки: від аналізу ваших потреб і створення стратегії до тестування, запуску продукту та його подальшої підтримки. У своїй роботі ми використовуємо найсучасніші технології, фреймворки та інструменти, такі як React, Node.js, Python, а також хмарні платформи й системи штучного інтелекту, щоб забезпечити максимальну продуктивність, безпеку та масштабованість наших рішень. Ми постійно вдосконалюємо наші навички та слідкуємо за новітніми трендами в ІТ-індустрії, щоб пропонувати вам передові продукти, які відповідають вимогам сьогодення та майбутнього. Ми глибоко переконані, що кожен проєкт є унікальним, тому наш підхід завжди індивідуальний. Ми уважно вивчаємо ваші потреби, цілі та виклики, щоб створити рішення, яке ідеально відповідає вашій візії. Наша мета – не просто виконати завдання, а перевершити ваші очікування, створивши продукт, який стане потужним інструментом для розвитку вашого бізнесу чи втілення вашої ідеї. Окрім технічної експертизи, ми також пропонуємо комплексний підхід до дизайну. Наші дизайнери створюють інтуїтивно зрозумілі, естетично привабливі інтерфейси, які забезпечують найкращий користувацький досвід. Наші клієнти – це компанії різного масштабу, від стартапів до великих корпорацій, а також індивідуальні підприємці, які прагнуть реалізувати свої ідеї. Ми пишаємося тим, що кожен наш проєкт – це історія успіху, яка допомагає нашим клієнтам досягати нових висот. Якщо ви готові розпочати свій шлях до інновацій, зв’яжіться з нами вже сьогодні. Команда CodeCraft з нетерпінням чекає можливості попрацювати над вашим проєктом, щоб разом створити щось дійсно надзвичайне. Давайте втілимо ваші мрії в реальність!",
+    aboutText: "<strong>CodeCraft</strong> – це інноваційна технологічна компанія, яка втілює найсміливіші ідеї в реальність, створюючи високоякісні та ефективні рішення для бізнесу й індивідуальних клієнтів. Ми спеціалізуємося на розробці сучасних веб-додатків, створенні унікальних дизайнерських концепцій, а також вирішенні складних бізнес-завдань за допомогою креативних і технологічно передових підходів. Якщо ви шукаєте надійного партнера, який допоможе реалізувати ваш проєкт від концепції до запуску, CodeCraft – це ваш ідеальний вибір. Наша команда складається з висококваліфікованих професіоналів, які мають багаторічний досвід у сфері інформаційних технологій, дизайну та управління проєктами. Ми пишаємося тим, що кожен наш спеціаліст привносить у роботу не лише технічні знання, але й пристрасть до інновацій та прагнення досягати найкращих результатів. Ми готові супроводжувати вас на кожному етапі розробки: від аналізу ваших потреб і створення стратегії до тестування, запуску продукту та його подальшої підтримки. У своїй роботі ми використовуємо найсучасніші технології, фреймворки та інструменти, такі як React, Node.js, Python, а також хмарні платформи й системи штучного інтелекту, щоб забезпечити максимальну продуктивність, безпеку та масштабованість наших рішень. Ми постійно вдосконалюємо наші навички та слідкуємо за новітніми трендами в ІТ-індустрії, щоб пропонувати вам передові продукти, які відповідають вимогам сьогодення та майбутнього. Ми глибоко переконані, що кожен проєкт є унікальним, тому наш підхід завжди індивідуальний. Ми уважно вивчаємо ваші потреби, цілі та виклики, щоб створити рішення, яке ідеально відповідає вашій візії. Наша мета – не просто виконати завдання, а перевершити ваші очікування, створивши продукт, який стане потужним інструментом для розвитку вашого бізнесу чи втілення вашої ідеї. Окрім технічної експертизи, ми також пропонуємо комплексний підхід до дизайну. Наші дизайнери створюють інтуїтивно зрозумілі, естетично привабливі інтерфейси, які забезпечують найкращий користувацький досвід. Наші клієнти – це компанії різного масштабу, від стартапів до великих корпорацій, а також індивідуальні підприємці, які прагнуть реалізувати свої ідеї. Ми пишаємося тим, що кожен наш проєкт – це історія успіху, яка допомагає нашим клієнтам досягати нових висот. Якщо ви готові розпочати свій шлях до інновацій, зв’яжіться з нами вже сьогодні. Команда CodeCraft з нетерпінням чекає можливості попрацювати над вашим проєктом, щоб разом створити щось дійсно надзвичайне. Давайте втілимо ваші мрії в реальність!",
     readMore: "Більше",
     readLess: "Менше",
     skillsTitle: "Наші характеристики",
@@ -193,39 +184,34 @@ const translations = {
     portfolioTitle: "Наші проєкти",
     project1Title: "Корпоративний сайт",
     project1Desc: "Сучасний дизайн з адаптивною версткою",
+    projectModalLink: "Посилання на проєкт: <a>Переглянути проєкт</a>",
     project1ModalTitle: "Корпоративний сайт",
     project1ModalDesc:
-      "Опис проєкту: Цей корпоративний сайт був розроблений з урахуванням усіх сучасних вимог до дизайну та функціональності. Він має адаптивну верстку, що дозволяє йому коректно відображатися на будь-яких пристроях, включаючи мобільні телефони та планшети.",
-    project1ModalTech: "Технології: HTML, CSS, JavaScript, PHP, MySQL",
-    project1ModalLink: "Переглянути проєкт",
+      "Цей корпоративний сайт був розроблений з урахуванням усіх сучасних вимог до дизайну та функціональності. Він має адаптивну верстку, що дозволяє йому коректно відображатися на будь-яких пристроях, включаючи мобільні телефони та планшети.",
+    project1ModalTech: "Технології: HTML, CSS, JavaScript, MongoDB, Node.js",
     project2Title: "E-Commerce Платформа",
     project2Desc: "Повнофункціональний інтернет-магазин",
     project2ModalTitle: "E-Commerce Платформа",
     project2ModalDesc:
-      "Опис проєкту: Ця платформа була розроблена з урахуванням усіх сучасних вимог до дизайну та функціональності. Вона має адаптивну верстку, що дозволяє їй коректно відображатися на будь-яких пристроях, включаючи мобільні телефони та планшети.",
-    project2ModalTech: "Технології: HTML, CSS, JavaScript, PHP, MySQL",
-    project2ModalLink: "Переглянути проєкт",
+      "Ця платформа була розроблена з урахуванням усіх сучасних вимог до дизайну та функціональності. Вона має адаптивну верстку, що дозволяє їй коректно відображатися на будь-яких пристроях, включаючи мобільні телефони та планшети.",
     project3Title: "HR Платформа",
     project3Desc: "Інноваційне рішення для HR-менеджменту",
     project3ModalTitle: "HR Платформа",
     project3ModalDesc:
-      "Опис проєкту: Ця HR-платформа була розроблена для спрощення процесів управління персоналом. Вона включає сучасний дизайн і адаптивну верстку, що забезпечує зручність використання на будь-яких пристроях.",
-    project3ModalTech: "Технології: HTML, CSS, JavaScript, PHP, MySQL",
-    project3ModalLink: "Переглянути проєкт",
+      "Ця HR-платформа була розроблена для спрощення процесів управління персоналом. Вона включає сучасний дизайн і адаптивну верстку, що забезпечує зручність використання на будь-яких пристроях.",
+    cardFooterButtons: "Дізнатися більше",
     contactTitle: "Зв’яжіться з нами",
     contactFormHeading: "Повідомлення",
     contactFormName: "Ім’я",
-    contactFormEmail: "Email",
+    contactFormEmail: "Електронна пошта",
     contactFormPhone: "Телефон",
     contactFormMessage: "Повідомлення",
     contactFormSubmit: "Надіслати",
     contactInfoTitle: "Наші контакти",
-    contactInfoAddressLabel: "Адреса",
+    contactInfoAddress: "Адреса",
     contactInfoAddress: "вул. Технологічна, 10, м. Київ",
     contactInfoPhoneLabel: "Телефон",
-    contactInfoPhone1: "+38 (044) 123-45-67",
-    contactInfoPhone2: "+38 (067) 890-12-34",
-    contactInfoEmailLabel: "Email",
+    contactInfoEmailLabel: "Електронна пошта",
     contactInfoEmail1: "info@codecraft.com",
     contactInfoEmail2: "support@codecraft.com",
     contactInfoHoursLabel: "Години роботи",
@@ -234,9 +220,6 @@ const translations = {
     contactInfoTelegramLabel: "Наш Telegram-бот",
     contactInfoTelegram: "@Nickname bot - Працює 24/7",
     footerText: "© 2025 CodeCraft. Усі права захищено",
-    sumbitTitle: "Дякуємо за ваше повідомлення!",
-    sumbitText: "Ми зв’яжемося з вами найближчим часом.",
-    sumbitButton: "Повернутися на головну",
   },
 };
 
@@ -288,6 +271,22 @@ function setLanguage(lang) {
   if (portfolioTitle)
     portfolioTitle.textContent = translations[lang].portfolioTitle;
 
+
+const projectLinks = document.querySelectorAll(".link-project");
+projectLinks.forEach((link) => {
+  const anchor = link.querySelector("a");
+  const href = anchor ? anchor.getAttribute("href") : "#";
+  link.innerHTML = translations[lang].projectModalLink.replace(
+    "<a>",
+    `<a href="${href}" target="_blank">`
+  );
+});
+
+cardFooterButtons = document.querySelectorAll(".card-footer button");
+  cardFooterButtons.forEach((button) => {
+    button.textContent = translations[lang].cardFooterButtons;
+  });
+
   // Project 1
   const project1Title = document.querySelector("#project1 .back-content h3");
   const project1Desc = document.querySelector(
@@ -303,9 +302,6 @@ function setLanguage(lang) {
   const project1ModalTech = document.querySelector(
     "#modal1 .modal-content p:nth-child(4)"
   );
-  const project1ModalLink = document.querySelector(
-    "#modal1 .modal-content p:nth-child(5) a"
-  );
   if (project1Title)
     project1Title.textContent = translations[lang].project1Title;
   if (project1Desc) project1Desc.textContent = translations[lang].project1Desc;
@@ -317,9 +313,7 @@ function setLanguage(lang) {
     project1ModalDesc2.textContent = translations[lang].project1ModalDesc;
   if (project1ModalTech)
     project1ModalTech.textContent = translations[lang].project1ModalTech;
-  if (project1ModalLink)
-    project1ModalLink.textContent = translations[lang].project1ModalLink;
-
+ 
   // Project 2
   const project2Title = document.querySelector("#project2 .back-content h3");
   const project2Desc = document.querySelector(
@@ -335,9 +329,6 @@ function setLanguage(lang) {
   const project2ModalTech = document.querySelector(
     "#modal2 .modal-content p:nth-child(4)"
   );
-  const project2ModalLink = document.querySelector(
-    "#modal2 .modal-content p:nth-child(5) a"
-  );
   if (project2Title)
     project2Title.textContent = translations[lang].project2Title;
   if (project2Desc) project2Desc.textContent = translations[lang].project2Desc;
@@ -349,8 +340,6 @@ function setLanguage(lang) {
     project2ModalDesc2.textContent = translations[lang].project2ModalDesc;
   if (project2ModalTech)
     project2ModalTech.textContent = translations[lang].project2ModalTech;
-  if (project2ModalLink)
-    project2ModalLink.textContent = translations[lang].project2ModalLink;
 
   // Project 3
   const project3Title = document.querySelector("#project3 .back-content h3");
@@ -367,9 +356,6 @@ function setLanguage(lang) {
   const project3ModalTech = document.querySelector(
     "#modal3 .modal-content p:nth-child(4)"
   );
-  const project3ModalLink = document.querySelector(
-    "#modal3 .modal-content p:nth-child(5) a"
-  );
   if (project3Title)
     project3Title.textContent = translations[lang].project3Title;
   if (project3Desc) project3Desc.textContent = translations[lang].project3Desc;
@@ -381,8 +367,9 @@ function setLanguage(lang) {
     project3ModalDesc2.textContent = translations[lang].project3ModalDesc;
   if (project3ModalTech)
     project3ModalTech.textContent = translations[lang].project3ModalTech;
-  if (project3ModalLink)
-    project3ModalLink.textContent = translations[lang].project3ModalLink;
+
+  // Project modal buttons
+
 
   // Contact
   const contactTitle = document.querySelector("#contact h2");
@@ -421,15 +408,6 @@ function setLanguage(lang) {
   // Footer
   const footerText = document.querySelector("footer p");
   if (footerText) footerText.textContent = translations[lang].footerText;
-
-  const sumbitTitle = document.getElementById("sumbit-title");
-  const sumbitText = document.getElementById("sumbit-text");
-  const sumbitButton = document.getElementById("sumbit-button");
-  if (sumbitTitle) sumbitTitle.textContent = translations[lang].sumbitTitle;
-  if (sumbitText) sumbitText.textContent = translations[lang].sumbitText;
-  if (sumbitButton)
-    sumbitButton.textContent = translations[lang].sumbitButton;
-  if (sumbitButton) sumbitButton.href = "index.html";
 }
 
 // Обробники подій для кнопок мови

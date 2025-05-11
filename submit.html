@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeCraft</title>
     <link rel="stylesheet" href="submit.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="icons/favicon.png" />
 </head>
 <body>
+    <div class="language-switcher" style="--i: 4">
+              <button id="eng-button">EN</button>
+              <button id="ua-button">UA</button>
+            </div>
     <div class="submit-container">
-        <h1 class="submit-title">Ваша заявка успішно відправлена!</h1>
-        <p class="submit-text">Дякуємо за вашу заявку. Ми зв'яжемося з вами найближчим часом.</p>
-        <button class="submit-button" onclick="window.location.href='index.html'">Повернутися на головну</button>
+        <h1 class="submit-title" data-key="submit-title">Ваша заявка успішно відправлена!</h1>
+        <p class="submit-text" data-key="submit-text">Дякуємо за вашу заявку. Ми зв'яжемося з вами найближчим часом.</p>
+        <button class="submit-button" data-key="submit-button" onclick="window.location.href='index.html'">Повернутися на головну</button>
     </div>
     <script src="main.js"></script>
 </body>
