@@ -82,8 +82,8 @@ document
         body: JSON.stringify(data),
       });
       if (response.ok) {
-        window.location.href = 'thank-you.html';
-      } 
+        window.location.href = "thank-you.html";
+      }
       const result = await response.json();
       responseDiv.style.color = "green";
       responseDiv.textContent =
@@ -105,8 +105,8 @@ let currentLang = "ua";
 
 toggleButton.addEventListener("click", () => {
   textContainer.classList.toggle("expanded")
-  ? (toggleButton.style.bottom = "2%")
-  : (toggleButton.style.bottom = "20%");
+    ? (toggleButton.style.bottom = "2%")
+    : (toggleButton.style.bottom = "20%");
   toggleButton.textContent = textContainer.classList.contains("expanded")
     ? translations[currentLang].readLess
     : translations[currentLang].readMore;
@@ -158,6 +158,8 @@ const translations = {
     contactInfoAddressLabel: "Address",
     contactInfoAddress: "10 Technological St, Kyiv",
     contactInfoPhoneLabel: "Phone",
+    contactInfoPhone1: "+38 (044) 123-45-67",
+    contactInfoPhone2: "+38 (067) 890-12-34",
     contactInfoEmailLabel: "Email",
     contactInfoEmail1: "info@codecraft.com",
     contactInfoEmail2: "support@codecraft.com",
@@ -174,7 +176,8 @@ const translations = {
     navContact: "Контакти",
     headerTitle: "Інноваційні веб-рішення | Перетворюємо ідеї в реальність",
     aboutTitle: "Про CodeCraft",
-    aboutText: "<strong>CodeCraft</strong> – це інноваційна технологічна компанія, яка втілює найсміливіші ідеї в реальність, створюючи високоякісні та ефективні рішення для бізнесу й індивідуальних клієнтів. Ми спеціалізуємося на розробці сучасних веб-додатків, створенні унікальних дизайнерських концепцій, а також вирішенні складних бізнес-завдань за допомогою креативних і технологічно передових підходів. Якщо ви шукаєте надійного партнера, який допоможе реалізувати ваш проєкт від концепції до запуску, CodeCraft – це ваш ідеальний вибір. Наша команда складається з висококваліфікованих професіоналів, які мають багаторічний досвід у сфері інформаційних технологій, дизайну та управління проєктами. Ми пишаємося тим, що кожен наш спеціаліст привносить у роботу не лише технічні знання, але й пристрасть до інновацій та прагнення досягати найкращих результатів. Ми готові супроводжувати вас на кожному етапі розробки: від аналізу ваших потреб і створення стратегії до тестування, запуску продукту та його подальшої підтримки. У своїй роботі ми використовуємо найсучасніші технології, фреймворки та інструменти, такі як React, Node.js, Python, а також хмарні платформи й системи штучного інтелекту, щоб забезпечити максимальну продуктивність, безпеку та масштабованість наших рішень. Ми постійно вдосконалюємо наші навички та слідкуємо за новітніми трендами в ІТ-індустрії, щоб пропонувати вам передові продукти, які відповідають вимогам сьогодення та майбутнього. Ми глибоко переконані, що кожен проєкт є унікальним, тому наш підхід завжди індивідуальний. Ми уважно вивчаємо ваші потреби, цілі та виклики, щоб створити рішення, яке ідеально відповідає вашій візії. Наша мета – не просто виконати завдання, а перевершити ваші очікування, створивши продукт, який стане потужним інструментом для розвитку вашого бізнесу чи втілення вашої ідеї. Окрім технічної експертизи, ми також пропонуємо комплексний підхід до дизайну. Наші дизайнери створюють інтуїтивно зрозумілі, естетично привабливі інтерфейси, які забезпечують найкращий користувацький досвід. Наші клієнти – це компанії різного масштабу, від стартапів до великих корпорацій, а також індивідуальні підприємці, які прагнуть реалізувати свої ідеї. Ми пишаємося тим, що кожен наш проєкт – це історія успіху, яка допомагає нашим клієнтам досягати нових висот. Якщо ви готові розпочати свій шлях до інновацій, зв’яжіться з нами вже сьогодні. Команда CodeCraft з нетерпінням чекає можливості попрацювати над вашим проєктом, щоб разом створити щось дійсно надзвичайне. Давайте втілимо ваші мрії в реальність!",
+    aboutText:
+      "<strong>CodeCraft</strong> – це інноваційна технологічна компанія, яка втілює найсміливіші ідеї в реальність, створюючи високоякісні та ефективні рішення для бізнесу й індивідуальних клієнтів. Ми спеціалізуємося на розробці сучасних веб-додатків, створенні унікальних дизайнерських концепцій, а також вирішенні складних бізнес-завдань за допомогою креативних і технологічно передових підходів. Якщо ви шукаєте надійного партнера, який допоможе реалізувати ваш проєкт від концепції до запуску, CodeCraft – це ваш ідеальний вибір. Наша команда складається з висококваліфікованих професіоналів, які мають багаторічний досвід у сфері інформаційних технологій, дизайну та управління проєктами. Ми пишаємося тим, що кожен наш спеціаліст привносить у роботу не лише технічні знання, але й пристрасть до інновацій та прагнення досягати найкращих результатів. Ми готові супроводжувати вас на кожному етапі розробки: від аналізу ваших потреб і створення стратегії до тестування, запуску продукту та його подальшої підтримки. У своїй роботі ми використовуємо найсучасніші технології, фреймворки та інструменти, такі як React, Node.js, Python, а також хмарні платформи й системи штучного інтелекту, щоб забезпечити максимальну продуктивність, безпеку та масштабованість наших рішень. Ми постійно вдосконалюємо наші навички та слідкуємо за новітніми трендами в ІТ-індустрії, щоб пропонувати вам передові продукти, які відповідають вимогам сьогодення та майбутнього. Ми глибоко переконані, що кожен проєкт є унікальним, тому наш підхід завжди індивідуальний. Ми уважно вивчаємо ваші потреби, цілі та виклики, щоб створити рішення, яке ідеально відповідає вашій візії. Наша мета – не просто виконати завдання, а перевершити ваші очікування, створивши продукт, який стане потужним інструментом для розвитку вашого бізнесу чи втілення вашої ідеї. Окрім технічної експертизи, ми також пропонуємо комплексний підхід до дизайну. Наші дизайнери створюють інтуїтивно зрозумілі, естетично привабливі інтерфейси, які забезпечують найкращий користувацький досвід. Наші клієнти – це компанії різного масштабу, від стартапів до великих корпорацій, а також індивідуальні підприємці, які прагнуть реалізувати свої ідеї. Ми пишаємося тим, що кожен наш проєкт – це історія успіху, яка допомагає нашим клієнтам досягати нових висот. Якщо ви готові розпочати свій шлях до інновацій, зв’яжіться з нами вже сьогодні. Команда CodeCraft з нетерпінням чекає можливості попрацювати над вашим проєктом, щоб разом створити щось дійсно надзвичайне. Давайте втілимо ваші мрії в реальність!",
     readMore: "Більше",
     readLess: "Менше",
     skillsTitle: "Наші характеристики",
@@ -208,9 +211,11 @@ const translations = {
     contactFormMessage: "Повідомлення",
     contactFormSubmit: "Надіслати",
     contactInfoTitle: "Наші контакти",
-    contactInfoAddress: "Адреса",
+    contactInfoAddressLabel: "Адреса",
     contactInfoAddress: "вул. Технологічна, 10, м. Київ",
     contactInfoPhoneLabel: "Телефон",
+    contactInfoPhone1: "+38 (044) 123-45-67",
+    contactInfoPhone2: "+38 (067) 890-12-34",
     contactInfoEmailLabel: "Електронна пошта",
     contactInfoEmail1: "info@codecraft.com",
     contactInfoEmail2: "support@codecraft.com",
@@ -227,6 +232,7 @@ const translations = {
 function setLanguage(lang) {
   currentLang = lang;
   localStorage.setItem("lang", lang);
+
   // Navigation
   const navAbout = document.querySelector('#nav-links a[href="#about"]');
   const navProjects = document.querySelector('#nav-links a[href="#portfolio"]');
@@ -271,18 +277,17 @@ function setLanguage(lang) {
   if (portfolioTitle)
     portfolioTitle.textContent = translations[lang].portfolioTitle;
 
+  const projectLinks = document.querySelectorAll(".link-project");
+  projectLinks.forEach((link) => {
+    const anchor = link.querySelector("a");
+    const href = anchor ? anchor.getAttribute("href") : "#";
+    link.innerHTML = translations[lang].projectModalLink.replace(
+      "<a>",
+      `<a href="${href}" target="_blank">`
+    );
+  });
 
-const projectLinks = document.querySelectorAll(".link-project");
-projectLinks.forEach((link) => {
-  const anchor = link.querySelector("a");
-  const href = anchor ? anchor.getAttribute("href") : "#";
-  link.innerHTML = translations[lang].projectModalLink.replace(
-    "<a>",
-    `<a href="${href}" target="_blank">`
-  );
-});
-
-cardFooterButtons = document.querySelectorAll(".card-footer button");
+  cardFooterButtons = document.querySelectorAll(".card-footer button");
   cardFooterButtons.forEach((button) => {
     button.textContent = translations[lang].cardFooterButtons;
   });
@@ -313,7 +318,7 @@ cardFooterButtons = document.querySelectorAll(".card-footer button");
     project1ModalDesc2.textContent = translations[lang].project1ModalDesc;
   if (project1ModalTech)
     project1ModalTech.textContent = translations[lang].project1ModalTech;
- 
+
   // Project 2
   const project2Title = document.querySelector("#project2 .back-content h3");
   const project2Desc = document.querySelector(
@@ -370,7 +375,6 @@ cardFooterButtons = document.querySelectorAll(".card-footer button");
 
   // Project modal buttons
 
-
   // Contact
   const contactTitle = document.querySelector("#contact h2");
   const contactFormHeading = document.querySelector("#contact-form .heading");
@@ -403,7 +407,35 @@ cardFooterButtons = document.querySelectorAll(".card-footer button");
     contactFormSubmit.textContent = translations[lang].contactFormSubmit;
   if (contactInfoTitle)
     contactInfoTitle.textContent = translations[lang].contactInfoTitle;
+  
+  // Contact info
+const contactInfoAddressLabel = document.querySelector(".contact-info .info-item:nth-child(2) .info-text p:first-child");
+  const contactInfoAddress = document.querySelector(".contact-info .info-item:nth-child(2) .info-text p:nth-child(2)");
+  const contactInfoPhoneLabel = document.querySelector(".contact-info .info-item:nth-child(3) .info-text p:first-child");
+  const contactInfoPhone1 = document.querySelector(".contact-info .info-item:nth-child(3) .info-text p:nth-child(2)");
+  const contactInfoPhone2 = document.querySelector(".contact-info .info-item:nth-child(3) .info-text p:nth-child(3)");
+  const contactInfoEmailLabel = document.querySelector(".contact-info .info-item:nth-child(4) .info-text p:first-child");
+  const contactInfoEmail1 = document.querySelector(".contact-info .info-item:nth-child(4) .info-text p:nth-child(2)");
+  const contactInfoEmail2 = document.querySelector(".contact-info .info-item:nth-child(4) .info-text p:nth-child(3)");
+  const contactInfoHoursLabel = document.querySelector(".contact-info .info-item:nth-child(5) .info-text p:first-child");
+  const contactInfoHours1 = document.querySelector(".contact-info .info-item:nth-child(5) .info-text p:nth-child(2)");
+  const contactInfoHours2 = document.querySelector(".contact-info .info-item:nth-child(5) .info-text p:nth-child(3)");
+  const contactInfoTelegramLabel = document.querySelector(".contact-info .info-item:nth-child(6) .info-text p:first-child");
+  const contactInfoTelegram = document.querySelector(".contact-info .info-item:nth-child(6) .info-text p:nth-child(2)");
 
+  if (contactInfoAddressLabel) contactInfoAddressLabel.textContent = translations[lang].contactInfoAddressLabel;
+  if (contactInfoAddress) contactInfoAddress.textContent = translations[lang].contactInfoAddress;
+  if (contactInfoPhoneLabel) contactInfoPhoneLabel.textContent = translations[lang].contactInfoPhoneLabel;
+  if (contactInfoPhone1) contactInfoPhone1.textContent = translations[lang].contactInfoPhone1;
+  if (contactInfoPhone2) contactInfoPhone2.textContent = translations[lang].contactInfoPhone2;
+  if (contactInfoEmailLabel) contactInfoEmailLabel.textContent = translations[lang].contactInfoEmailLabel;
+  if (contactInfoEmail1) contactInfoEmail1.textContent = translations[lang].contactInfoEmail1;
+  if (contactInfoEmail2) contactInfoEmail2.textContent = translations[lang].contactInfoEmail2;
+  if (contactInfoHoursLabel) contactInfoHoursLabel.textContent = translations[lang].contactInfoHoursLabel;
+  if (contactInfoHours1) contactInfoHours1.textContent = translations[lang].contactInfoHours1;
+  if (contactInfoHours2) contactInfoHours2.textContent = translations[lang].contactInfoHours2;
+  if (contactInfoTelegramLabel) contactInfoTelegramLabel.textContent = translations[lang].contactInfoTelegramLabel;
+  if (contactInfoTelegram) contactInfoTelegram.innerHTML = `<a class="bot-link" href="https://t.me/MyContactBot" target="_blank">${translations[lang].contactInfoTelegram.split(" - ")[0]}</a> - ${translations[lang].contactInfoTelegram.split(" - ")[1]}`;
 
   // Footer
   const footerText = document.querySelector("footer p");
@@ -443,4 +475,3 @@ document.addEventListener("DOMContentLoaded", () => {
   // Встановлення мови за замовчуванням
   setLanguage(localStorage.getItem("lang") || "en");
 });
-
